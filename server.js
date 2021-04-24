@@ -13,4 +13,4 @@ app.use(function (req, res, next) {
 require('./controllers/quizzes-controller')(app);
 require('./controllers/questions-controller')(app);
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
